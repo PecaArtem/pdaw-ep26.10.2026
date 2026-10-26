@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-body h3{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
 header {
     background-color: #FFFFFF;
-    height: 120px;
+}
+header div.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
 }
 header nav{
     display: flex;
@@ -20,7 +21,9 @@ header nav.topbar {
     background-color: #14201A;
     height: 36px;
     display:flex;
-    padding: 8px 40px;
+    padding: 10px 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 header nav.topbar ul {
     display:flex;
@@ -43,6 +46,7 @@ header nav.main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 header nav.main ul {
     display:flex;
@@ -72,8 +76,9 @@ header nav.main ul.center li {
 header nav.main ul.center li span.green{
     color:green;
 }
-
-header nav.main ul.right li {
+header nav.main ul.right button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     display:flex;
     font-size: 14px;
     background-color: #15803D;
@@ -84,4 +89,55 @@ header nav.main ul.right li {
     position: relative;
     color: #FFFFFF;
     padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #CBD5E1;
+    width:90%;
+    margin: 0 auto;
+}
+
+header nav.main2 ul{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    gap: 100px;
+    font-size: 15px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    width: 100%;
+    padding-bottom:20px;
+}
+header nav.main2 a{
+    text-decoration: none;
+    color: #475569;
+}
+header nav.main2 a.active{
+    color: #15803D;
+    position: relative;
+
+}
+header nav.main2 a.active::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #15803D;
+    border-radius: 100%;
+    left:50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.section-1 {
+    padding-top:20px;
+    height: 547px;
+    width:100%;
+    background-color:#DCFCE7;
 }
