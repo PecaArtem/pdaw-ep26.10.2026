@@ -877,3 +877,189 @@ header nav.main2 a.active::after {
 .section-5 div.gallery-col.center img {
     height: 160px;
 }
+.section-6 {
+    width: 100%;
+    height: 694px;
+    background-color: #FFFFFF;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-6 div.section-title {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-6 div.section-title span.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #15803D;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-6 div.section-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+    color: #14201A;
+    margin-bottom: 8px;
+}
+
+.section-6 div.section-title p.desc {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #64748B;
+}
+
+.section-6 div.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.section-6 div.price-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    width: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section-6 div.price-card.featured {
+    background-color: #14201A;
+    border: none;
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.section-6 div.price-card span.recomandat {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #CA8A04;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.section-6 div.price-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14201A;
+    margin-bottom: 20px;
+}
+
+.section-6 div.price-card.featured h3 {
+    color: #FFFFFF;
+}
+
+.section-6 div.price-card div.amount-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section-6 div.price-card span.cost {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 56px;
+    color: #14201A;
+}
+
+.section-6 div.price-card.featured span.cost {
+    color: #FFFFFF;
+}
+
+.section-6 div.price-card span.period {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #64748B;
+    margin-left: 4px;
+}
+
+.section-6 div.price-card.featured span.period {
+    color: #CBD5E1;
+}
+
+.section-6 div.price-card ul.features {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-6 div.price-card ul.features li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #15803D;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #E2E8F0;
+}
+
+.section-6 div.price-card.featured ul.features li {
+    color: #CA8A04;
+    border-bottom: 1px dashed #334155;
+}
+
+.section-6 div.price-card button.btn-book {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: transparent;
+    color: #15803D;
+    border: 2px solid #15803D;
+    border-radius: 6px;
+    height: 44px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: auto;
+}
+
+.section-6 div.price-card.featured button.btn-book {
+    background-color: #CA8A04;
+    color: #FFFFFF;
+    border: none;
+}
