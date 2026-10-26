@@ -6,7 +6,7 @@
 header {
     background-color: #FFFFFF;
 }
-header div.sticky {
+header.sticky {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -17,30 +17,29 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-header nav.topbar {
+nav.topbar {
     background-color: #14201A;
     height: 36px;
-    display:flex;
-    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-header nav.topbar ul {
-    display:flex;
-    color: #CBD5E1;
-    font-size: 13px;
-    height: 16px;
-    top: 10px;
+
+nav.topbar ul {
+    display: flex;
     align-items: center;
     list-style: none;
+    color: #CBD5E1;
+    font-size: 13px;
+    height: 100%;
 }
-header nav.topbar ul.left {
-    display:flex;
-    left: 40px;
-}
-header nav.topbar ul.right {
-    display:flex;
-    left: 743px;
+
+nav.topbar ul.left, nav.topbar ul.right {
+    display: flex;
+    align-items: center;
 }
 header nav.main {
     display: flex;
@@ -324,4 +323,152 @@ header nav.main2 a.active::after {
 .section-1 div.hero-right div.badge-bottom {
     bottom: 40px;
     left: -20px;
+}
+.section-2 {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.section-2 div.benefits-left {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.section-2 div.benefits-left span.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #15803D;
+    margin-bottom: 12px;
+}
+
+.section-2 div.benefits-left h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+    color: #14201A;
+    margin-bottom: 16px;
+}
+
+.section-2 div.benefits-left p.description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #64748B;
+    margin-bottom: 32px;
+    max-width: 320px;
+}
+
+.section-2 div.benefits-left button.btn-about {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #15803D;
+    color: #FFFFFF;
+    height: 46px;
+    width: fit-content;
+    padding: 0 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section-2 div.benefits-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 60%;
+}
+
+.section-2 div.benefits-right div.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 div.benefits-right div.card span.icon {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #14201A;
+    background-color: #DCFCE7;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-2 div.benefits-right div.card h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #14201A;
+    margin-bottom: 8px;
+}
+
+.section-2 div.benefits-right div.card p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #64748B;
+}
+
+.fixed-cart {
+    position: fixed;
+    right: 40px;
+    top: 150px;
+    width: 56px;
+    height: 56px;
+    background-color: #CA8A04;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.fixed-cart span.cart-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: #EF4444;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
