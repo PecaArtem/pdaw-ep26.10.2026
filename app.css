@@ -7,6 +7,10 @@ body h3{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
+header {
+    background-color: #FFFFFF;
+    height: 120px;
+}
 header nav{
     display: flex;
     justify-content: space-between;
@@ -33,5 +37,51 @@ header nav.topbar ul.left {
 }
 header nav.topbar ul.right {
     display:flex;
-    left: 743pxpx;
+    left: 743px;
+}
+header nav.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav.main ul {
+    display:flex;
+    justify-content: left;
+    list-style: none;
+    padding: 8px 40px;
+}
+header nav.main ul.left li {
+    display:flex;
+    font-size: 10px;
+    background-color: #E2E8F0;
+    height: 38px;
+    width: 190px;
+    top: 54px;
+    left: 40px;
+    border-radius: 4px;
+    align-items: center;
+    color: #94A3B8;
+    padding: 0px 5px;
+    border: 1px solid #CBD5E1;
+}
+header nav.main ul.center li {
+    display:flex;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+header nav.main ul.center li span.green{
+    color:green;
+}
+
+header nav.main ul.right li {
+    display:flex;
+    font-size: 14px;
+    background-color: #15803D;
+    height: 38px;
+    width: 128px;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+    padding: 10px 10px;
 }
