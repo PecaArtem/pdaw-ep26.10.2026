@@ -1,1 +1,5 @@
-# pdaw-ep26.10.2026
+# Informații despre proiect
+
+- Numele: Peca Artem
+- Grupa: IS11Z
+- Numărul variantei: 15

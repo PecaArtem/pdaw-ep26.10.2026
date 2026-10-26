@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #FFFFFF;
+}
+header div.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav.topbar {
+    background-color: #14201A;
+    height: 36px;
+    display:flex;
+    padding: 10px 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+header nav.topbar ul {
+    display:flex;
+    color: #CBD5E1;
+    font-size: 13px;
+    height: 16px;
+    top: 10px;
+    align-items: center;
+    list-style: none;
+}
+header nav.topbar ul.left {
+    display:flex;
+    left: 40px;
+}
+header nav.topbar ul.right {
+    display:flex;
+    left: 743px;
+}
+header nav.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+header nav.main ul {
+    display:flex;
+    justify-content: left;
+    list-style: none;
+    padding: 8px 40px;
+}
+header nav.main ul.left li {
+    display:flex;
+    font-size: 10px;
+    background-color: #E2E8F0;
+    height: 38px;
+    width: 190px;
+    top: 54px;
+    left: 40px;
+    border-radius: 4px;
+    align-items: center;
+    color: #94A3B8;
+    padding: 0px 5px;
+    border: 1px solid #CBD5E1;
+}
+header nav.main ul.center li {
+    display:flex;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+header nav.main ul.center li span.green{
+    color:green;
+}
+header nav.main ul.right button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    display:flex;
+    font-size: 14px;
+    background-color: #15803D;
+    height: 38px;
+    width: 128px;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #CBD5E1;
+    width:90%;
+    margin: 0 auto;
+}
+
+header nav.main2 ul{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    gap: 100px;
+    font-size: 15px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    width: 100%;
+    padding-bottom:20px;
+}
+header nav.main2 a{
+    text-decoration: none;
+    color: #475569;
+}
+header nav.main2 a.active{
+    color: #15803D;
+    position: relative;
+
+}
+header nav.main2 a.active::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #15803D;
+    border-radius: 100%;
+    left:50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.section-1 {
+    padding-top: 20px;
+    height: 547px;
+    width: 100%;
+    background-color: #DCFCE7;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.section-1 div.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section-1 div.hero-left span.badge {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #15803D;
+    background-color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.section-1 div.hero-left h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 65px;
+    color: #14201A;
+    margin-bottom: 20px;
+}
+
+.section-1 div.hero-left h1 span.green {
+    color: #15803D;
+}
+
+.section-1 div.hero-left p.description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #475569;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+
+.section-1 div.hero-left ul.hero-buttons {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.section-1 div.hero-left ul.hero-buttons button.primary {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #15803D;
+    color: #FFFFFF;
+    height: 46px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section-1 div.hero-left ul.hero-buttons button.secondary {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: transparent;
+    color: #15803D;
+    height: 46px;
+    padding: 0 24px;
+    border: 2px solid #15803D;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section-1 div.hero-left ul.hero-stats {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.section-1 div.hero-left ul.hero-stats li {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 div.hero-left ul.hero-stats li span.stat-num {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 41px;
+    color: #14201A;
+}
+
+.section-1 div.hero-left ul.hero-stats li span.stat-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+}
+
+.section-1 div.hero-right {
+    display: flex;
+    width: 45%;
+    position: relative;
+}
+
+.section-1 div.hero-right img.hero-img {
+    width: 390px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.section-1 div.hero-right div.floating-badge {
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-1 div.hero-right div.floating-badge span.badge-icon {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #14201A;
+    background-color: #DCFCE7;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.section-1 div.hero-right div.floating-badge span.badge-bold {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #14201A;
+    display: block;
+}
+
+.section-1 div.hero-right div.floating-badge span.badge-light {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+    display: block;
+}
+
+.section-1 div.hero-right div.badge-top {
+    top: 40px;
+    right: -20px;
+}
+
+.section-1 div.hero-right div.badge-bottom {
+    bottom: 40px;
+    left: -20px;
+}
