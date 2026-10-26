@@ -330,6 +330,7 @@ header nav.main2 a.active::after {
     display: flex;
     justify-content: space-between;
     padding: 80px;
+    height: 504px;
 }
 
 .section-2 div.benefits-left {
@@ -471,4 +472,189 @@ header nav.main2 a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.section-3 {
+    width: 100%;
+    background-color: #F6FAF7;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-3 div.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-3 div.section-title span.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #15803D;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-3 div.section-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+    color: #14201A;
+    margin-bottom: 8px;
+}
+
+.section-3 div.section-title p.desc {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #64748B;
+}
+
+.section-3 div.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 277px);
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 891px; /* (277px * 3) + (30px * 2 гап) = ровно ширина трех твоих карточек из Figma */
+}
+
+.section-3 div.product-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
+    width: 277px;
+}
+
+.section-3 div.product-card div.img-wrapper {
+    width: 277px;
+    height: 190px;
+    position: relative;
+}
+
+.section-3 div.product-card div.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-3 div.product-card span.card-badge {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: #CA8A04;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 2;
+}
+
+.section-3 div.product-card span.card-badge.sale {
+    background-color: #EF4444;
+}
+
+.section-3 div.product-card div.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-3 div.product-card div.card-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.section-3 div.product-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14201A;
+}
+
+.section-3 div.product-card div.stars {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F59E0B;
+}
+
+.section-3 div.product-card p.info {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+    margin-bottom: 20px;
+}
+
+.section-3 div.product-card div.card-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-3 div.product-card div.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-3 div.product-card span.current-price {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #15803D;
+}
+
+.section-3 div.product-card span.old-price {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: line-through;
+    color: #94A3B8;
+}
+
+.section-3 div.product-card button.btn-cart {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #15803D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    cursor: pointer;
+    text-align: center;
 }
