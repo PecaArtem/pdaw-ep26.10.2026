@@ -742,3 +742,65 @@ header nav.main2 a.active::after {
 .slider-dots .dot.active {
     background-color: #15803d;
 }
+
+
+
+.section-5 {
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6faf7;
+}
+
+.section-5 .section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-5 .section-title .subtitle {
+    display: block;
+    margin-bottom: 8px;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.section-5 .section-title h2 {
+    color: #14201a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.gallery-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 284px);
+    justify-content: center;
+    gap: 14px;
+}
+
+.gallery-col {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.gallery-grid img {
+    width: 284px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-col:not(.center) img {
+    height: 334px;
+}
+
+.gallery-col.center img {
+    height: 160px;
+}
