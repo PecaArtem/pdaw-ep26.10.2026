@@ -438,3 +438,167 @@ header nav.main2 a.active::after {
     font-size: 14px;
     line-height: 17px;
 }
+
+/* Третья секция - secțiunea de produse */
+
+.section-3 {
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6faf7;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-title .subtitle {
+    display: block;
+    margin-bottom: 8px;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+}
+
+.section-title h2 {
+    margin-bottom: 8px;
+    color: #14201a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.section-title .desc {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.products-grid {
+    width: 100%;
+    max-width: 891px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 277px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    width: 277px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.img-wrapper {
+    width: 277px;
+    height: 190px;
+    position: relative;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-shield {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #ca8a04;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+}
+
+.card-shield.sale {
+    background-color: #ef4444;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-row-top {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card h3 {
+    color: #14201a;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.product-card .info {
+    margin-bottom: 20px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.card-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-price {
+    color: #15803d;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.old-price {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: line-through;
+}
+
+.btn-cart {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #15803d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    cursor: pointer;
+    text-align: center;
+}
