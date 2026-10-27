@@ -135,7 +135,7 @@ header nav.main2 a.active::after {
     transform: translateX(-50%);
 }
 
-/* Плашка фиксед корзина */
+
 
 .fixed-cart {
     position: fixed;
@@ -439,7 +439,7 @@ header nav.main2 a.active::after {
     line-height: 17px;
 }
 
-/* Третья секция - secțiunea de produse */
+
 
 .section-3 {
     width: 100%;
@@ -970,4 +970,162 @@ header nav.main2 a.active::after {
     border: none;
     background-color: #ca8a04;
     color: #fff;
+}
+
+
+
+.section-7 {
+    width: 100%;
+    height: 120px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: #15803d;
+}
+
+.subscribe-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subscribe-left h2 {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.subscribe-left p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.subscribe-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.subscribe-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #14201a;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.subscribe-form input::placeholder {
+    color: #94a3b8;
+}
+
+.subscribe-form button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #15803d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+footer {
+    padding: 60px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #14201a;
+}
+
+footer .logo {
+    margin-bottom: 16px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+}
+
+footer .logo .orange {
+    color: #ca8a04;
+}
+
+footer .description {
+    max-width: 530px;
+    margin-bottom: 30px;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+footer .links,
+footer .socials {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer .links {
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+footer .links a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+footer .socials {
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+footer .socials li {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #15803d;
+}
+
+footer .socials a {
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer hr {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .copyright {
+    color: #94a3b8;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
 }
